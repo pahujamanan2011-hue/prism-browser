@@ -1,3 +1,4 @@
+#include "duktape.h
 /*
  *  Duktape 2.3.1 built from sources.
  *
