@@ -1,0 +1,93 @@
+#ifndef PRISM_CONFIG_H
+#define PRISM_CONFIG_H
+
+/* Window Configuration */
+#define WINDOW_TITLE "Prism Browser"
+#define WINDOW_WIDTH 1280
+#define WINDOW_HEIGHT 720
+#define MAX_URL_LENGTH 2048
+#define MAX_PAGE_HISTORY 100
+#define MAX_ELEMENTS_PER_PAGE 5000
+
+/* Renderer Configuration */
+#define MARGIN_X 40
+#define MARGIN_Y 40
+#define LINE_HEIGHT_MULTIPLIER 1.5f
+#define FONT_SIZE 16
+#define MAX_LINE_LENGTH 4096
+#define SCROLL_STEP 20
+
+/* Network Configuration */
+#define USER_AGENT "PrismBrowser/1.0 (Linux; x86_64)"
+#define MAX_REDIRECTS 10
+#define CONNECTION_TIMEOUT 30
+#define READ_TIMEOUT 30
+#define MAX_RESPONSE_SIZE 10 * 1024 * 1024 /* 10MB */
+
+/* Dark Theme Colors (Cyber-Charcoal High-Contrast) */
+#define THEME_BG_R 10
+#define THEME_BG_G 12
+#define THEME_BG_B 14
+#define THEME_BG_A 255
+
+#define THEME_TEXT_R 220
+#define THEME_TEXT_G 222
+#define THEME_TEXT_B 225
+#define THEME_TEXT_A 255
+
+#define THEME_LINK_R 100
+#define THEME_LINK_G 180
+#define THEME_LINK_B 255
+#define THEME_LINK_A 255
+
+#define THEME_VISITED_R 180
+#define THEME_VISITED_G 130
+#define THEME_VISITED_B 255
+#define THEME_VISITED_A 255
+
+#define THEME_URLBAR_BG_R 20
+#define THEME_URLBAR_BG_G 22
+#define THEME_URLBAR_BG_B 25
+#define THEME_URLBAR_BG_A 255
+
+#define THEME_URLBAR_TEXT_R 220
+#define THEME_URLBAR_TEXT_G 222
+#define THEME_URLBAR_TEXT_B 225
+#define THEME_URLBAR_TEXT_A 255
+
+#define THEME_BORDER_R 60
+#define THEME_BORDER_G 65
+#define THEME_BORDER_B 70
+#define THEME_BORDER_A 255
+
+/* Cache Configuration */
+#define IMAGE_CACHE_SIZE 50
+#define DNS_CACHE_SIZE 100
+#define DNS_CACHE_TTL 300 /* seconds */
+
+/* JavaScript Configuration */
+#define JS_HEAP_SIZE 1024 * 1024 * 2 /* 2MB */
+#define JS_STACK_SIZE 1024 * 100
+
+/* Keybindings */
+#define KEY_CTRL_O 15
+#define KEY_CTRL_R 18
+#define KEY_CTRL_Q 17
+#define KEY_UP 273
+#define KEY_DOWN 274
+#define KEY_LEFT 276
+#define KEY_RIGHT 275
+#define KEY_PAGEUP 280
+#define KEY_PAGEDOWN 281
+#define KEY_HOME 278
+#define KEY_END 279
+#define KEY_TAB 9
+#define KEY_ENTER 13
+#define KEY_ESCAPE 27
+#define KEY_BACKSPACE 8
+
+/* Blackhole Configuration */
+#define MAX_BLACKHOLE_DOMAINS 5000
+#define BLACKHOLE_REFRESH_HOURS 24
+
+#endif /* PRISM_CONFIG_H */
